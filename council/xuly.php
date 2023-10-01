@@ -19,6 +19,9 @@ if (isset($_POST['addcouncil'])) {
         echo 'Không thành công. Lỗi: ' . mysqli_error($mysqli);
     }
     $mysqli->close();
+}elseif (isset($_POST['cancel'])) {
+    header('Location:../index.php?action=council');
+    ob_end_flush();
 } elseif (isset($_POST['editcouncil'])) {
     $name = $_POST['name'];
     $academic_year = $_POST['academic_year'];
@@ -39,6 +42,9 @@ if (isset($_POST['addcouncil'])) {
         echo 'Không thành công. Lỗi: ' . mysqli_error($mysqli);;
     }
     $mysqli->close();
+}elseif (isset($_POST['editcancel'])) {
+    header('Location:../index.php?action=council');
+    ob_end_flush();
 } else {
     $id = $_GET['id'];
     $sqldelete = "delete from council where id = '$id'";

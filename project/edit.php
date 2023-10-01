@@ -100,7 +100,8 @@ if ($id) {
               </textarea>
                             </div>
                             <button type="submit" name="editproject" class="btn btn-success">Sửa</button>
-
+                            <button type="submit" name="editcancel" class="btn btn-success" formnovalidate>cancel</button>  
+                <!-- /.card-body -->                  
                             <!-- /.card-body -->
                             <div class="card-footer">
                             </div>

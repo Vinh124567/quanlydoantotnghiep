@@ -111,6 +111,7 @@ $teachers3 = mysqli_query($mysqli, $sql);
                                 
                   
                   <button type="submit" name="editcouncil" class="btn btn-success">Sửa</button>
+                  <button type="submit" name="editcancel" class="btn btn-success" formnovalidate>cancel</button>  
                 <!-- /.card-body -->
                 <div class="card-footer">
                 </div>

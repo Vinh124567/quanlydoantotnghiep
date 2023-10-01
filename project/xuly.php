@@ -22,6 +22,9 @@ if (isset($_POST['addproject'])) {
         echo 'Không thành công';
     }
     $mysqli->close();
+}elseif (isset($_POST['cancel'])) {
+    header('Location:../index.php?action=project');
+    ob_end_flush();
 } elseif (isset($_POST['editproject'])) {
     $title = $_POST['title'];
     $content = $_POST['content'];
@@ -48,6 +51,9 @@ if (isset($_POST['addproject'])) {
         echo 'Không thành công';
     }
     $mysqli->close();
+}elseif (isset($_POST['editcancel'])) {
+    header('Location:../index.php?action=project');
+    ob_end_flush();
 } else {
     $id = $_GET['id'];
     $sqldelete = "delete from project where id = '$id'";

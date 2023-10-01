@@ -82,7 +82,8 @@ $teachers = mysqli_query($mysqli, $sql);
                     <textarea id="content" name="content">
               </textarea></div>
                   <button type="submit" name="addproject" class="btn btn-success">Thêm</button>
-
+                  <button type="submit" name="cancel" class="btn btn-success" formnovalidate>cancel</button>  
+                <!-- /.card-body -->                     
                 <!-- /.card-body -->
                 <div class="card-footer">
                 </div>

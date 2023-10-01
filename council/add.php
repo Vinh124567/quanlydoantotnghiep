@@ -97,6 +97,7 @@ $teachers3 = mysqli_query($mysqli, $sql);
                                 
                   
                   <button type="submit" name="addcouncil" class="btn btn-success">Thêm</button>
+                  <button type="submit" name="cancel" class="btn btn-success" formnovalidate>cancel</button>  
                 <!-- /.card-body -->
                 <div class="card-footer">
                 </div>

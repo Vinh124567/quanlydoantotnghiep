@@ -32,7 +32,7 @@
                 <div class="card-body">
                   <div class="form-group">
                     <label for="exampleInputEmail1">Tên</label>
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Tên khóa">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Tên khóa" required>
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPassword1">Niên khóa</label>
@@ -43,7 +43,7 @@
                     <textarea name="note" class="form-control" id="" cols="30" rows="10"></textarea>
                   </div>
                   <button type="submit" name="addcourse" class="btn btn-success">Thêm</button>
-
+                  <button type="submit" name="cancel" class="btn btn-success" formnovalidate>cancel</button>  
                 <!-- /.card-body -->
                 <div class="card-footer">
                 </div>

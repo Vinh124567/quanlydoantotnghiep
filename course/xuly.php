@@ -2,6 +2,7 @@
 <?php 
 include('../db/connect.php');
 ob_start();
+
 if (isset($_POST['addcourse'])) {
     $name = $_POST['name'];
     $time = $_POST['time'];
@@ -14,7 +15,10 @@ if (isset($_POST['addcourse'])) {
     } else {
         echo 'Không thành công';
     }
-} elseif(isset($_POST['editcourse'])){
+}elseif (isset($_POST['cancel'])) {
+    header('Location:../index.php?action=course');
+    ob_end_flush();
+}elseif(isset($_POST['editcourse'])){
     $name = $_POST['name'];
     $time = $_POST['time'];
     $note = $_POST['note'];
@@ -27,6 +31,9 @@ if (isset($_POST['addcourse'])) {
             echo 'Không thành công';
         }
         $mysqli->close(); 
+}elseif (isset($_POST['editcancel'])) {
+    header('Location:../index.php?action=course');
+    ob_end_flush();
 }else{
     $id = $_GET['id'];
     $sqldelete = "delete from course where id = '$id'";

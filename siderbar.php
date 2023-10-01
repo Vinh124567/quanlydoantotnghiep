@@ -85,6 +85,15 @@
           </a>
         </li>
         <li class="nav-item">
+          <a href="index.php?action=dsdetai" class="nav-link 
+          <?php if ($action == 'dsdetai' || $action == 'adddetai' || $action == 'editdetai') :
+                                                                echo 'active';
+                                                              endif; ?>">
+            <i class="nav-icon far fa-circle text-info"></i>
+            <p>Danh sách đề tài</p>
+          </a>
+        </li>
+        <li class="nav-item">
           <a href="index.php?action=project" class="nav-link 
           <?php if ($action == 'project' || $action == 'addproject' || $action == 'editproject') :
                                                                 echo 'active';

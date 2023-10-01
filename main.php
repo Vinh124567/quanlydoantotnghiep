@@ -77,6 +77,16 @@
             include("council/edit.php");
         }
         
+        elseif ($tam =='dsdetai'){
+            include("dsdetai/index.php");
+        }
+        elseif ($tam =='adddetai'){
+            include("dsdetai/add.php");
+        }
+        elseif ($tam =='editdetai'){
+            include("dsdetai/edit.php");
+        }
+        
         else {
             include("dashboard.php");
         }

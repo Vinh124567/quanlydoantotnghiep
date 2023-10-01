@@ -53,7 +53,7 @@
                     <textarea name="note" class="form-control"  id="" cols="30" rows="10"><?php echo $faculty['note'] ?></textarea>
                   </div>
                   <button type="submit" name="editcourse" class="btn btn-success">Sửa</button>
-
+                  <button type="submit" name="editcancel" class="btn btn-success">cancel</button>
                 <!-- /.card-body -->
                 <div class="card-footer">
                 </div>
