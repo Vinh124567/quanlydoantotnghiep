@@ -119,7 +119,15 @@
             <p>Quản lý user</p>
           </a>
         </li>
-
+        <li class="nav-item">
+          <a href="index.php?action=train" class="nav-link 
+          <?php if ($action == 'train' || $action == 'addtrain' || $action == 'edittrain') :
+                                                                echo 'active';
+                                                              endif; ?>">
+            <i class="nav-icon far fa-circle text-info"></i>
+            <p>Quản lý hệ đào tạo</p>
+          </a>
+        </li>
 
         <li class="nav-item">
           <a href="index.php?logout=1" class="nav-link ">

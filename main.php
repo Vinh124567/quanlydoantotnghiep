@@ -86,6 +86,14 @@
         elseif ($tam =='editdetai'){
             include("dsdetai/edit.php");
         }
+        elseif($tam=='train'){
+            include("train/index.php");
+        }elseif ($tam =='addtrain'){
+            include("train/add.php");
+        }
+         elseif ($tam =='edittrain'){
+            include("train/edit.php");
+        }
         
         else {
             include("dashboard.php");
